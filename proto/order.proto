@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package order;
+
+option go_package = "grpc-k8s-playground/order-service/gen";
+
+service OrderService {
+    rpc CreateOrder (OrderRequest) returns (OrderResponse);
+}
+
+message OrderRequest {
+  string user_id   = 1;
+  string item_name = 2;
+  int64  amount    = 3;
+}
+
+message OrderResponse {
+  string order_id = 1;
+  bool   paid     = 2;
+  string message  = 3;
+}
