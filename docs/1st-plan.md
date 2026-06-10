@@ -26,15 +26,13 @@ kubectl get deploy -A
 kubectl get svc -A
 ```
 
-ここで見るものは、
+ここで見ること
 
 ```text
 NodeがReadyか
 kube-systemのPodがRunningか
 defaultにnginx-testが残っているか
 ```
-
-です。
 
 ## Step 1: namespaceを作る
 
@@ -99,7 +97,7 @@ kubectl delete pod <nginxのPod名> -n grpc-app
 kubectl get pods -n grpc-app
 ```
 
-消しても新しいPodが作られればOKです。
+消しても新しいPodが作られればOK
 
 ここで、
 
@@ -283,7 +281,7 @@ Service
 grpcurl
 ```
 
-が完成です。
+が完成
 
 ## Step 10: ArgoCDをインストール
 
