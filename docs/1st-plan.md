@@ -328,7 +328,7 @@ GitHubの状態
 Kubernetesクラスタ
 ```
 
-に同期します。
+に同期
 
 ## 最終的に理解したいこと
 
@@ -359,5 +359,3 @@ Service
 ArgoCD
   GitHubのmanifestとクラスタ状態を同期する
 ```
-
-まず次は **Step 1〜Step 4のnginx Deployment練習** をやるのがいいです。
