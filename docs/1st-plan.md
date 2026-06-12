@@ -3,17 +3,17 @@
 ## 全体ステップ
 
 - [x] Step 0  現状確認
-- [x] Step 1  namespace整理
-- [x] Step 2  手動でnginx Deploymentを作る
-- [x] Step 3  Serviceを作って通信確認
-- [x] Step 4  grpc-serverをGoで作る
-- [x] Step 5  Docker imageを作る
-- [ ] Step 6  kindにimageを読み込ませる
-- [ ] Step 7  Kubernetes manifestを書く
-- [ ] Step 8  kubectl applyで手動デプロイ
-- [ ] Step 9  ArgoCDをインストール
-- [ ] Step 10 ArgoCD Applicationを作る
-- [ ] Step 11 GitOpsでgrpc-serverを管理する
+- [x] Step 1  namespaceを作る
+- [x] Step 2  Deploymentを理解する
+- [x] Step 3  Podを消して自動復旧を見る
+- [x] Step 4  Serviceを作る
+- [x] Step 5  nginx練習を削除
+- [ ] Step 6  Go gRPC serverを作る
+- [ ] Step 7  Docker imageを作る
+- [ ] Step 8  manifestを書く
+- [ ] Step 9  grpcurlで確認
+- [ ] Step 10 ArgoCDをインストール
+- [ ] Step 11 ArgoCD Applicationを作る
 
 ## Step 0: 現状確認
 
