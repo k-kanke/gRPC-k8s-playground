@@ -2,20 +2,18 @@
 
 ## 全体ステップ
 
-```text
-Step 0  現状確認
-Step 1  namespace整理
-Step 2  手動でnginx Deploymentを作る
-Step 3  Serviceを作って通信確認
-Step 4  grpc-serverをGoで作る
-Step 5  Docker imageを作る
-Step 6  kindにimageを読み込ませる
-Step 7  Kubernetes manifestを書く
-Step 8  kubectl applyで手動デプロイ
-Step 9  ArgoCDをインストール
-Step 10 ArgoCD Applicationを作る
-Step 11 GitOpsでgrpc-serverを管理する
-```
+- [x] Step 0  現状確認
+- [x] Step 1  namespace整理
+- [x] Step 2  手動でnginx Deploymentを作る
+- [x] Step 3  Serviceを作って通信確認
+- [x] Step 4  grpc-serverをGoで作る
+- [x] Step 5  Docker imageを作る
+- [ ] Step 6  kindにimageを読み込ませる
+- [ ] Step 7  Kubernetes manifestを書く
+- [ ] Step 8  kubectl applyで手動デプロイ
+- [ ] Step 9  ArgoCDをインストール
+- [ ] Step 10 ArgoCD Applicationを作る
+- [ ] Step 11 GitOpsでgrpc-serverを管理する
 
 ## Step 0: 現状確認
 
@@ -112,7 +110,7 @@ Deploymentが本体
 
 ```bash
 kubectl expose deployment nginx-deploy \
-  --port=80 \
+  --port=123 \
   --target-port=80 \
   -n grpc-app
 ```
