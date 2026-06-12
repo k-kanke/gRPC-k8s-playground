@@ -4,6 +4,7 @@ import (
 	"context"
 	"log"
 	"net"
+	"os"
 
 	orderpb "grpc-k8s-playground/order-service/gen"
 	paymentpb "grpc-k8s-playground/order-service/paymentgen"
@@ -47,7 +48,15 @@ func (s *orderServer) CreateOrder(ctx context.Context, req *orderpb.OrderRequest
 
 func main() {
 	// payment-serviceにgRPCで接続
-	conn, err := grpc.NewClient("localhost:50051", grpc.WithTransportCredentials(insecure.NewCredentials()))
+	paymentServiceAddr := os.Getenv("PAYMENT_SERVICE_ADDR")
+	if paymentServiceAddr == "" {
+		paymentServiceAddr = "localhost:50051"
+	}
+
+	conn, err := grpc.NewClient(
+		paymentServiceAddr,
+		grpc.WithTransportCredentials(insecure.NewCredentials()),
+	)
 	if err != nil {
 		log.Fatalf("payment-serviceに接続できません: %v", err)
 	}
@@ -73,4 +82,3 @@ func main() {
 		log.Fatalf("failed to serve: %v", err)
 	}
 }
-
