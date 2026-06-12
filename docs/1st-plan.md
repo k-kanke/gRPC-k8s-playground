@@ -12,7 +12,7 @@
 - [x] Step 7  Docker imageを作る
 - [x] Step 8  manifestを書く
 - [x] Step 9  grpcurlで確認
-- [ ] Step 10 ArgoCDをインストール
+- [x] Step 10 ArgoCDをインストール
 - [ ] Step 11 ArgoCD Applicationを作る
 
 ## Step 0: 現状確認
