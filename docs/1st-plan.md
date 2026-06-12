@@ -10,8 +10,8 @@
 - [x] Step 5  nginx練習を削除
 - [x] Step 6  Go gRPC serverを作る
 - [x] Step 7  Docker imageを作る
-- [ ] Step 8  manifestを書く
-- [ ] Step 9  grpcurlで確認
+- [x] Step 8  manifestを書く
+- [x] Step 9  grpcurlで確認
 - [ ] Step 10 ArgoCDをインストール
 - [ ] Step 11 ArgoCD Applicationを作る
 
