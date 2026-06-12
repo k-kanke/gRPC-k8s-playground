@@ -8,8 +8,8 @@
 - [x] Step 3  Podを消して自動復旧を見る
 - [x] Step 4  Serviceを作る
 - [x] Step 5  nginx練習を削除
-- [ ] Step 6  Go gRPC serverを作る
-- [ ] Step 7  Docker imageを作る
+- [x] Step 6  Go gRPC serverを作る
+- [x] Step 7  Docker imageを作る
 - [ ] Step 8  manifestを書く
 - [ ] Step 9  grpcurlで確認
 - [ ] Step 10 ArgoCDをインストール
