@@ -1,4 +1,4 @@
-> **kind上にArgoCDを入れて、GitHub管理のmanifestからgrpc-serverをデプロイする**
+**kind上にArgoCDを入れて、GitHub管理のmanifestからgrpc-serverをデプロイする**
 
 ## 全体ステップ
 
