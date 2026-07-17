@@ -4,12 +4,15 @@ package payment;
 
 option go_package = "grpc-k8s-playground/payment-service/gen";
 
+// IDL: APIとデータ構造を言語非依存の形で定義する
+
 // service: gRPCのAPIの定義
 // 決済サービスの定義
 service PaymentService {
   rpc ProcessPayment (PaymentRequest) returns (PaymentResponse);
 }
 
+// データ構造の定義
 // 決済リクエスト
 message PaymentRequest {
   string order_id = 1;
